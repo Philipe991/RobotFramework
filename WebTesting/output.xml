@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20230124 15:05:08.231" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon Testes" source="C:\CursosUdemy\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="9">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230124 15:05:08.811" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230124 15:05:12.201" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230124 15:05:12.201" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</msg>
+<status status="FAIL" starttime="20230124 15:05:08.811" endtime="20230124 15:05:12.228"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230124 15:05:12.228" endtime="20230124 15:05:12.228"/>
+</kw>
+<status status="FAIL" starttime="20230124 15:05:08.810" endtime="20230124 15:05:12.228"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230124 15:05:12.229" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230124 15:05:12.229" endtime="20230124 15:05:12.229"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230124 15:05:12.229" endtime="20230124 15:05:12.229"/>
+</kw>
+<status status="PASS" starttime="20230124 15:05:12.229" endtime="20230124 15:05:12.229"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230124 15:05:08.809" endtime="20230124 15:05:12.230">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02 - Pesquisa de um Produto" line="21">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230124 15:05:12.240" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230124 15:05:15.563" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230124 15:05:15.563" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</msg>
+<status status="FAIL" starttime="20230124 15:05:12.240" endtime="20230124 15:05:15.564"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230124 15:05:15.564" endtime="20230124 15:05:15.564"/>
+</kw>
+<status status="FAIL" starttime="20230124 15:05:12.240" endtime="20230124 15:05:15.564"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230124 15:05:15.565" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230124 15:05:15.565" endtime="20230124 15:05:15.565"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230124 15:05:15.565" endtime="20230124 15:05:15.565"/>
+</kw>
+<status status="PASS" starttime="20230124 15:05:15.565" endtime="20230124 15:05:15.565"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20230124 15:05:12.239" endtime="20230124 15:05:15.566">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</status>
+</test>
+<test id="s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="29">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230124 15:05:15.569" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230124 15:05:22.398" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230124 15:05:22.398" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</msg>
+<status status="FAIL" starttime="20230124 15:05:15.569" endtime="20230124 15:05:22.398"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230124 15:05:22.398" endtime="20230124 15:05:22.398"/>
+</kw>
+<status status="FAIL" starttime="20230124 15:05:15.569" endtime="20230124 15:05:22.399"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230124 15:05:22.399" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230124 15:05:22.399" endtime="20230124 15:05:22.399"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230124 15:05:22.399" endtime="20230124 15:05:22.399"/>
+</kw>
+<status status="PASS" starttime="20230124 15:05:22.399" endtime="20230124 15:05:22.400"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20230124 15:05:15.568" endtime="20230124 15:05:22.400">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</status>
+</test>
+<test id="s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="39">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230124 15:05:22.404" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20230124 15:05:25.678" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230124 15:05:25.678" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</msg>
+<status status="FAIL" starttime="20230124 15:05:22.404" endtime="20230124 15:05:25.679"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230124 15:05:25.679" endtime="20230124 15:05:25.679"/>
+</kw>
+<status status="FAIL" starttime="20230124 15:05:22.404" endtime="20230124 15:05:25.679"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230124 15:05:25.680" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230124 15:05:25.680" endtime="20230124 15:05:25.680"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230124 15:05:25.680" endtime="20230124 15:05:25.680"/>
+</kw>
+<status status="PASS" starttime="20230124 15:05:25.680" endtime="20230124 15:05:25.680"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20230124 15:05:22.403" endtime="20230124 15:05:25.680">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 109.0.5414.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009BACD3+2075859]
+	Ordinal0 [0x0094EE61+1633889]
+	Ordinal0 [0x0084B7BD+571325]
+	Ordinal0 [0x0086DFCD+712653]
+	Ordinal0 [0x00869266+692838]
+	Ordinal0 [0x00866BE9+682985]
+	Ordinal0 [0x0089DBD3+908243]
+	Ordinal0 [0x0089D6AA+906922]
+	Ordinal0 [0x00897136+880950]
+	Ordinal0 [0x0086FEFD+720637]
+	Ordinal0 [0x00870F3F+724799]
+	GetHandleVerifier [0x00C6EED2+2769538]
+	GetHandleVerifier [0x00C60D95+2711877]
+	GetHandleVerifier [0x00A4A03A+521194]
+	GetHandleVerifier [0x00A48DA0+516432]
+	Ordinal0 [0x0095682C+1665068]
+	Ordinal0 [0x0095B128+1683752]
+	Ordinal0 [0x0095B215+1683989]
+	Ordinal0 [0x00966484+1729668]
+	BaseThreadInitThunk [0x75AF7BA9+25]
+	RtlInitializeExceptionChain [0x772DBB9B+107]
+	RtlClearBits [0x772DBB1F+191]
+</status>
+</test>
+<doc>Essa suíte testa o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20230124 15:05:08.232" endtime="20230124 15:05:25.684"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="1" skip="0">busca_produtos</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">lista_busca</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
