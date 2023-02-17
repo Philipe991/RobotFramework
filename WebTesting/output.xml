@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230215 15:35:03.460" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicio Argumentos Retorno" source="C:\Automação de teste\RobotFramework\WebTesting\exercicio_argumentos_retorno.robot">
+<test id="s1-t1" name="Caso de teste 01" line="10">
+<kw name="Uma keyword com argumentos e retorno">
+<kw name="Uma subkeyword com argumentos e retorno">
+<var>${EMAIL_GERADO}</var>
+<arg>philipe</arg>
+<arg>melo</arg>
+<arg>${PALAVRA_ALEATORIA_FAKER_LIB}</arg>
+<kw name="Generate Random String" library="String">
+<var>${PALAVRA_ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230215 15:35:04.115" level="INFO">${PALAVRA_ALEATORIA} = 2YuIxXXS</msg>
+<status status="PASS" starttime="20230215 15:35:04.115" endtime="20230215 15:35:04.115"/>
+</kw>
+<kw name="Country" library="FakerLibrary">
+<var>${PALAVRA_ALEATORIA_FAKER_LIB}</var>
+<msg timestamp="20230215 15:35:04.116" level="INFO">${PALAVRA_ALEATORIA_FAKER_LIB} = El Salvador</msg>
+<status status="PASS" starttime="20230215 15:35:04.115" endtime="20230215 15:35:04.116"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${GERAR_EMAIL}</var>
+<arg>O e-mail gerado foi:${NOME}_${SOBRENOME}_${PALAVRA_ALEATORIA}_${PALAVRA_ALEATORIA_FAKER_LIB}@email.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230215 15:35:04.116" level="INFO">${GERAR_EMAIL} = O e-mail gerado foi:philipe_melo_2YuIxXXS_El Salvador@email.com</msg>
+<status status="PASS" starttime="20230215 15:35:04.116" endtime="20230215 15:35:04.116"/>
+</kw>
+<return>
+<value>${GERAR_EMAIL}</value>
+<status status="PASS" starttime="20230215 15:35:04.116" endtime="20230215 15:35:04.116"/>
+</return>
+<msg timestamp="20230215 15:35:04.116" level="INFO">${EMAIL_GERADO} = O e-mail gerado foi:philipe_melo_2YuIxXXS_El Salvador@email.com</msg>
+<status status="PASS" starttime="20230215 15:35:04.115" endtime="20230215 15:35:04.116"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EMAIL_GERADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230215 15:35:04.116" endtime="20230215 15:35:04.117"/>
+</kw>
+<status status="PASS" starttime="20230215 15:35:04.114" endtime="20230215 15:35:04.117"/>
+</kw>
+<status status="PASS" starttime="20230215 15:35:04.114" endtime="20230215 15:35:04.117"/>
+</test>
+<doc>Exercicio para fixação do conteúdo sobre keywords com argumentos e retorno</doc>
+<status status="PASS" starttime="20230215 15:35:03.461" endtime="20230215 15:35:04.118"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio Argumentos Retorno">Exercicio Argumentos Retorno</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
