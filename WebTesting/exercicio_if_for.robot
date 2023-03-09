@@ -26,3 +26,22 @@ Usando FOR e IF
             Log To Console    Eu não sou o número 5 e nem o 10! Pois sou o número ${NUMERO}...
         END        
     END
+
+#   #FICA A DICA
+#   # Existem outros modos de fazer, veja abaixo:
+#   FOR    ${numero}    IN   @{NUMEROS}
+#       IF  ${numero} == 5 or ${numero} == 10
+#           Log To Console    Eu sou o número ${numero}!
+#       ELSE
+#           Log To Console    Eu não sou o número 5 e nem o 10!
+#       END
+#   END
+
+#   Log To Console  ${\n}
+#   FOR    ${numero}    IN   @{NUMEROS}
+#       IF  ${numero} in (5, 10)
+#           Log To Console    Eu sou o número ${numero}!
+#       ELSE
+#           Log To Console    Eu não sou o número 5 e nem o 10!
+#       END              
+#   END
